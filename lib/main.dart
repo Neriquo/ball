@@ -17,11 +17,13 @@ class BallPage extends StatefulWidget {
 }
 
 class _BallPageState extends State<BallPage> {
-  int ballNumber = 1; // Initialisé à 1 pour correspondre aux images, car 0
+  int ballNumber =
+      1; // Initialisé à 1 pour correspondre aux images, ball0 n'existe pas alors je commence à 1
 
   void changeBall() {
     setState(() {
-      ballNumber = Random().nextInt(5) + 1; // Génère un nombre entre 1 et 5
+      ballNumber = Random().nextInt(5) +
+          1; // Génère un nombre entre 1 et 5, +1 car ball0 n'existe pas et on commence donc à 1
       print('ballNumber : $ballNumber'); // Affiche le numéro dans la console
     });
   }
