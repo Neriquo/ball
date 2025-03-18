@@ -22,7 +22,7 @@ class BallPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.indigo.shade800,
         title: Text(
-          'BOULE MAGIQUE',
+          'BOULE MAGIQUE 8',
           style: TextStyle(
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
