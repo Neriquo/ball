@@ -1,5 +1,5 @@
-name: ball
-description: A new Flutter application.
+name: cosmic_ball
+description: Une application Flutter spectaculaire avec des animations cosmiques.
 
 version: 1.0.0+1
 
@@ -11,13 +11,13 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
+  flutter_animate: ^4.1.1+1  # Pour les animations modernes
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
-
   uses-material-design: true
 
   assets:
