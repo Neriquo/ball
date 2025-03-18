@@ -24,3 +24,15 @@ class BallPage extends StatelessWidget {
     );
   }
 }
+
+class Ball extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => _BallState();
+}
+
+class _BallState extends State<Ball> {
+  @override
+  Widget build(BuildContext context) {
+    return Text("test");
+  }
+}
