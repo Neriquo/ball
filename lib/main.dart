@@ -18,9 +18,7 @@ class BallPage extends StatelessWidget {
            style: TextStyle(color: Colors.white70)
        ),
      ),
-      body: Container(
-
-      ),
+      body: Ball()
     );
   }
 }
@@ -33,6 +31,6 @@ class Ball extends StatefulWidget {
 class _BallState extends State<Ball> {
   @override
   Widget build(BuildContext context) {
-    return Text("test");
+    return Center(child: Image.asset("./images/ball1.png"));
   }
 }
