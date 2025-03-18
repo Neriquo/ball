@@ -122,7 +122,7 @@ class _BallState extends State<Ball> with SingleTickerProviderStateMixin {
               ],
             ),
             child: Text(
-              'Pensez à une question et touchez la boule',
+              'Pensez à une question et Cliquez sur la boule pour voir sa réponse',
               style: TextStyle(
                 color: Colors.amber.shade100,
                 fontSize: 18.0,
