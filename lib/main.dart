@@ -51,7 +51,7 @@ class _BallState extends State<Ball> {
         onPressed: () {
           changeBall(); // Appelle la fonction pour changer l'image quand on clique
           print('I got clicked'); // Message de débogage dans la console
-          print('Ball number: $ballNumber'); // Affiche le numéro de l'image sélectionnée grâce à $ballNumber
+          print('$ballNumber'); // Affiche le numéro de l'image sélectionnée grâce à $ballNumber
         },
         // Affiche l'image correspondant au numéro actuel grâce à $ballNumber
         child: Image.asset('images/ball$ballNumber.png'),
