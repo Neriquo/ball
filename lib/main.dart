@@ -29,19 +29,30 @@ class Ball extends StatefulWidget {
 class _BallState extends State<Ball> {
   int ballNumber = 1;
 
+  void changeBall() {
+    setState(() {
+      ballNumber = Random().nextInt(6) + 1;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: TextButton(
-        onPressed: () {
-          setState(() {
-            ballNumber = Random().nextInt(6) + 1;
-            print('I got clicked');
-            print('Ball number: $ballNumber');
-          });
-        },
-        child: Image.asset('images/ball$ballNumber.png'),
-      ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        TextButton(
+          onPressed: changeBall,
+          child: Image.asset('images/ball$ballNumber.png'),
+        ),
+        if (ballNumber == 6) ...[
+          SizedBox(height: 20),
+          Text(
+            "Secret",
+            style: TextStyle(
+                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+          ),
+        ],
+      ],
     );
   }
 }

@@ -1,0 +1,2 @@
+C:/Users/arthu/StudioProjects/ball/android/app/.cxx/Debug/3b41d324/x86/CMakeFiles/edit_cache.dir
+C:/Users/arthu/StudioProjects/ball/android/app/.cxx/Debug/3b41d324/x86/CMakeFiles/rebuild_cache.dir
